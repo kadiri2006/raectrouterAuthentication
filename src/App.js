@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import Check from "./components/check";
 import HomePage from "./components/homepage";
 import LoginPage from "./components/loginpage";
 import ProtectedPage from "./components/protectedpage";
@@ -12,7 +13,9 @@ export default function App() {
         <Routes>
           <Route path="/home" element={<HomePage />} />
           <Route path="/login" element={<LoginPage />} />
-          <Route path="/protect" element={<ProtectedPage />} />
+          <Route path="/protect" element={<Check />}>
+            <Route index element={<ProtectedPage />} />
+          </Route>
         </Routes>
       </Selection>
     </>
