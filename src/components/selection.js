@@ -9,10 +9,12 @@ export default function Selection(props) {
     <div>
       <nav className="navbar">
         <Link to="/home">Home</Link>
-        <Link to="/login">Login</Link>
+
         <Link to="/protect">ProtectedPage</Link>
         <span>
-          {isLoggedIn.isAuthTrue ? isLoggedIn.name : "user NoLogged In"}
+          {isLoggedIn.isAuthTrue
+            ? `welcome ${isLoggedIn.name}`
+            : "user NoLogged In"}
         </span>
       </nav>
       <Auth.Provider value={{ setIsLoggedIn, isLoggedIn }}>
