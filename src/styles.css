@@ -1,4 +1,12 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  font-size: 68.5%;
+}
+
+.navbar {
+  display: flex;
+  border: solid;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
 }

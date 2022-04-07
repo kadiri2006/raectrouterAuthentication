@@ -10,9 +10,9 @@ export default function App() {
     <>
       <Selection>
         <Routes>
-          <Route element={<HomePage />} />
-          <Route element={<LoginPage />} />
-          <Route element={<ProtectedPage />} />
+          <Route path="/home" element={<HomePage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/protect" element={<ProtectedPage />} />
         </Routes>
       </Selection>
     </>
